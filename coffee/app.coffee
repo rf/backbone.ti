@@ -1,14 +1,15 @@
-Ti.API.debug 'hi'
-
 Backbone = require 'backbone'
 
 class Main extends Backbone.View
   
   initialize: =>
-    @proxy = Ti.UI.createWindow
+    @window = Ti.UI.createWindow
       navBarHidden: false
+    @label = Ti.UI.createLabel
+      text: 'Welcome to backbone.ti'
+      color: '#CCCCCC'
 
-    alert 'opening'
-    @proxy.open()
+    @window.add @label
+    @window.open()
 
 main = new Main
