@@ -16,7 +16,7 @@ Main = (function(_super) {
 
   Main.prototype.initialize = function() {
     this.window = Ti.UI.createWindow({
-      navBarHidden: false
+      navBarHidden: true
     });
     this.label = Ti.UI.createLabel({
       text: 'Welcome to backbone.ti',

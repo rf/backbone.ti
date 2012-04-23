@@ -4,7 +4,7 @@ class Main extends Backbone.View
   
   initialize: =>
     @window = Ti.UI.createWindow
-      navBarHidden: false
+      navBarHidden: true
     @label = Ti.UI.createLabel
       text: 'Welcome to backbone.ti'
       color: '#CCCCCC'
